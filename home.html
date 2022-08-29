@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Coffee</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+    <link rel="stylesheet" href="../css/slick.css">
+
+</head>
+<body>
+    <div class="main-content-wrapper" id="#home">
+        <header>
+            <!-- box1 -->
+            <div class="logo">
+                <a href="#home">
+                    <img src="./images/mag.svg" alt="Mag">
+                </a>
+            </div>
+
+            <!-- box2 -->
+            <div class="links">
+                <a href="home.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="Q&A.html">Q&A</a>
+                <a href="shop.html">Shop</a>
+            </div>
+        </header>
+
+        <div class="big-image-and-title">
+            <img src="./images/main-image.jpeg" alt="ship">
+            <div class="title">
+                <h3>Good Quality and Low Cost</h3>
+                <a href="shop.html"><button>Check items</button></a>
+            </div>
+            
+        </div>
+
+
+
+
+        <div class="about-us" id="about">
+            <!-- box1 -->
+            <div class="about-explanation">
+                <div class="about-titles">
+                    <h3>About us</h3>
+                    <h4>   
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus provident accusamus quas ab minus ea ipsum animi iusto corporis asperiores praesentium velit, iure laboriosam voluptatum reiciendis molestias consectetur error?
+                        Nemo nesciunt repellat culpa placeat temporibus possimus suscipit a animi labore? Unde, quos deleniti error illum ipsum repellendus similique nam.
+                       
+                    </h4>
+                </div>
+               
+            </div>
+
+            <!-- box2 -->
+            <div class="about-image">
+                <img src="../images/ship.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <!-- box1 -->
+            <div class="contact-info">
+                <h2>Contact</h2>
+                <h4>Granvile St, Vancouver,BC, Canada</h4>
+                <h4>coffee@example.com</h4>
+                <h4>234987567</h4>
+            </div>
+
+            <!-- box2 -->
+            <form action="#" class="contact-form">
+                <!-- name -->
+                <input type="text" id="name" name="name" placeholder="*Name">
+                
+                <!-- Email address -->
+                <input type="email" id="email" name="email" placeholder="*Email">
+                
+                <!-- Phone number -->
+                <input type="text" id="pnumber" name="pnumber" placeholder="*Phone number">
+
+                <!-- Subject -->
+                <input type="text" id="subject" name="subject" placeholder="*Subject">
+
+                <!-- Message -->
+                <input type="text" id="message" name="message" placeholder="*Message">
+
+                <!-- buttom -->
+                <div class="submit-button">
+                    <input type="submit" value="Submit" >
+                </div>
+                
+            </form> 
+        </div>
+
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.6324759916474!2d-123.14140218392163!3d49.24545687932728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486738e757a8465%3A0x4d2b3600b9e21c4b!2sGranville%20St%2C%20Vancouver%2C%20BC!5e0!3m2!1sen!2sca!4v1661503286209!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <footer>
+            <h4>Naoto Tokoyoda @ 2022</h4>
+        </footer>
+
+
+
+
+
+
+
+    </div><!--  end main-content-wrapper -->
+
+
+
+        
+
+          <script src="../js/jquery.min.js"></script>
+          <script src="../js/slick.min.js" ></script>
+          <script>
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                // when it is smaller than 960px
+                $('.slider').slick({
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll:3,
+                    dots: true,
+                    arrows: true,
+            
+                });
+
+            } 
+            
+           
+
+            
+		
+          </script>
+    
+</body>
+</html>
