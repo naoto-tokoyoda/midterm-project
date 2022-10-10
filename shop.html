@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shop - Coffee</title>
     <link rel="stylesheet" href="../css/shop.css">
 </head>
 <body>
+    <script type="text/javascript" 
+        src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  
+    </script> 
     <header>
         <!-- box1 -->
         <div class="logo">
@@ -23,106 +26,140 @@
             <a href="home.html#contact">Contact</a>
             <a href="Q&A.html">Q&A</a>
             <a href="shop.html">Shop</a>
+            <a id="myBtn" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</a>
         </div>
     </header>
-
+    
     <div class="main-content-wrapper">
         <div class="grid-container">
             <div class="item1"> 
-                <a href="../productPage/item1.html">
-                        <img src="../images/productImages/coffee-beans1.jpeg" alt="">
-                        <h3>Item 1</h3>
-                        <h4>C$100.00</h4>
-                    </a>
-                </div>
+                <img src="../images/productImages/coffee-beans1.jpeg" alt="">
+                <h3>Coffee 1</h3>
+                <h4>C$100.00</h4>
+                <a href="#" data-name="Coffee1" data-price="100" class="add-to-cart" >Add to cart</a>
+            </div>
+            
             <div class="item2"> 
-                <a href="../productPage/item2.html">
-                        <img src="../images/productImages/coffee-beans2.jpeg" alt="">
-                        <h3>Item 2</h3>
-                        <h4>C$100.00</h4>
-                    </a>
-                </div>
+                <img src="../images/productImages/coffee-beans2.jpeg" alt="">
+                <h3>Coffee 2</h3>
+                <h4>C$100.00</h4>
+                <a href="#" data-name="Coffee2" data-price="100" class="add-to-cart">Add to cart</a>
+            </div>
+
             <div class="item3"> 
-                <a href="../productPage/item3.html">
-                        <img src="../images/productImages/coffee-beans3.jpeg" alt="">
-                        <h3>Item 3</h3>
-                        <h4>C$100.00</h4>
-                    </a>
-                </div>  
+                <img src="../images/productImages/coffee-beans3.jpeg" alt="">
+                <h3>Coffee 3</h3>
+                <h4>C$100.00</h4>
+                <a href="#" data-name="Coffee3" data-price="100" class="add-to-cart">Add to cart</a>
+            </div>  
+
             <div class="item4"> 
-                <a href="../productPage/item4.html">
-                        <img src="../images/productImages/coffee-beans4.jpeg" alt="">
-                        <h3>Item 4</h3>
-                        <h4>C$100.00</h4>
-                    </a>
-                </div>
+                <img src="../images/productImages/coffee-beans4.jpeg" alt="">
+                <h3>Coffee 4</h3>
+                <h4>C$100.00</h4>
+                <a href="#" data-name="Coffee4" data-price="100" class="add-to-cart">Add to cart</a>
+            </div>
+
             <div class="item5"> 
-                <a href="../productPage/item5.html">
-                        <img src="../images/productImages/coffee-beans5.jpeg" alt="">
-                        <h3>Item 5</h3>
-                        <h4>C$100.00</h4>
-                    </a>
-                </div>
+                <img src="../images/productImages/coffee-beans5.jpeg" alt="">
+                <h3>Coffee 5</h3>
+                <h4>C$100.00</h4>
+                <a href="#" data-name="Coffee5" data-price="100" class="add-to-cart">Add to cart</a>
+            </div>
+
             <div class="item6"> 
-                <a href="../productPage/item6.html">
-                        <img src="../images/productImages/coffee-beans6.jpeg" alt="">
-                        <h3>Item 6</h3>
-                        <h4>C$100.00</h4>
-                    </a>
-                </div>
+                <img src="../images/productImages/coffee-beans6.jpeg" alt="">
+                <h3>Coffee 6</h3>
+                <h4>C$100.00</h4>
+                <a href="#" data-name="Coffee6" data-price="100" class="add-to-cart">Add to cart</a>
+            </div>
+
             <div class="item7"> 
-                <a href="../productPage/item7.html">
-                        <img src="../images/productImages/coffee-beans7.jpeg" alt="">
-                        <h3>Item 7</h3>
-                        <h4>C$100.00</h4>
-                    </a>
-                </div>
+                <img src="../images/productImages/coffee-beans7.jpeg" alt="">
+                <h3>Coffee 7</h3>
+                <h4>C$100.00</h4>
+                <a href="#" data-name="Coffee7" data-price="100" class="add-to-cart">Add to cart</a>
+            </div>
+
             <div class="item8"> 
-                <a href="../productPage/item8.html">
-                        <img src="../images/productImages/coffee-beans8.jpeg" alt="">
-                        <h3>Item 8</h3>
-                        <h4>C$100.00</h4>
-                    </a>
-                </div>
+                <img src="../images/productImages/coffee-beans8.jpeg" alt="">
+                <h3>Coffee 8</h3>
+                <h4>C$100.00</h4>
+                <a href="#" data-name="Coffee8" data-price="100" class="add-to-cart">Add to cart</a>
+            </div>
+
             <div class="item9"> 
-                <a href="../productPage/item9.html">
-                        <img src="../images/productImages/coffee-beans9.jpeg" alt="">
-                        <h3>Item 9</h3>
-                        <h4>C$100.00</h4>
-                    </a>
-                </div>
+                <img src="../images/productImages/coffee-beans9.jpeg" alt="">
+                <h3>Coffee 9</h3>
+                <h4>C$100.00</h4>
+                <a href="#" data-name="Coffee9" data-price="100" class="add-to-cart">Add to cart</a>
+            </div>
+
+
             <div class="item10"> 
-                <a href="../productPage/item10.html">
-                        <img src="../images/productImages/coffee-beans10.jpeg" alt="">
-                        <h3>Item 10</h3>
-                        <h4>C$100.00</h4>
-                    </a>
-                </div>
-            <div class="item11"> 
-                <a href="../productPage/item11.html">
-                        <img src="../images/productImages/coffee-beans11.jpeg" alt="">
-                        <h3>Item 12</h3>
-                        <h4>C$100.00</h4>
-                    </a>
-                </div>
-            <div class="item12"> 
-                <a href="../productPage/item12.html">
-                        <img src="../images/productImages/coffee-beans12.jpeg" alt="">
-                        <h3>Item 12</h3>
-                        <h4>C$100.00</h4>
-                    </a>
-                </div>
+                <img src="../images/productImages/coffee-beans10.jpeg" alt="">
+                <h3>Coffee 10</h3>
+                <h4>C$100.00</h4>
+                <a href="#" data-name="iCoffee0" data-price="100" class="add-to-cart">Add to cart</a>
+            </div>
           </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+                    
+                    </table>
+                    <div class="total-price">Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="clear-cart btn btn-danger">Clear Cart</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div> 
     <footer>
         <h4>Naoto Tokoyoda @ 2022</h4>
     </footer>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
+    <script src="./js/shoppingCart.js"></script>
     
 </body>
 </html>
-
-
-
-
-
-        
